@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <pre>
+타입스크립트는 자바스크립트를 기반으로 한 언어
+자바스크립트에서 유요한 코드는 타입스크립트에서도 유효함
+
+tsc app.ts
+해당 명령어를 터미널에 입력하면 js파일로 컴파일 해줌
+
+tsc -W
+w는 watch의 줄임말로 감시모드로 전환
+tsc app.ts로 컴파일하고 다시 파일을 수정해도 변환이 되지 않는데 해당 명령을 터미널에 입력하면 ts파일에서 파일을 수정하면 js파일에도 자동으로 수정이됨
+
+타입스크립트에서
+let a = 5;
+이처럼 선언하고 컴파일하였을때
+
+자바스크립트 코드는 
+var a = 5;
+로 변환이되고
+
+자바스크립트에서 
+var a = 5;
+a = 'hello';
+처럼 다른 다입을 재할당 할경우 아무 문제가 없지만
+타입스크립트에서 재 할당하면 에러가 발생한다...
+
+타입스크립에서 타입을 선언해주지 않으면 타입을 추론하게 되는데
+처음 할당된 값이 숫자 5이기 떄문에 a의 타입은 자동으로 number로 선언된것이다
+이와 같은 것을 타입추론(TYPE INFERENCE)라고 한다
+    </pre>
+</body>
+</html>
